@@ -10,4 +10,6 @@ WORKDIR /app
 
 RUN bundle install
 
+RUN gem install foreman
+
 CMD ["/app/docker-entrypoint.sh"]
