@@ -115,7 +115,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
-    minitest (5.22.2)
+    minitest (5.22.3)
     msgpack (1.7.2)
     net-imap (0.4.10)
       date
@@ -263,7 +263,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.2.0p0
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   2.5.5
+   2.5.6
