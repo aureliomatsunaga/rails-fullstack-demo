@@ -5,8 +5,13 @@
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Content:</strong>
-    <%= post.content %>
+    Posted <%= time_tag post.created_at, "data-local": "time-ago" %>
+  </p>
+
+  <p>
+    <strong>
+      <%= pluralize post.comments.count, "comment" %>
+    </strong>
   </p>
 
   <% if action_name != "show" %>
