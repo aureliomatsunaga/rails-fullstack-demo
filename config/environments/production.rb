@@ -99,6 +99,6 @@ Rails.application.configure do
 
   # Doing this due to render free tier limitations
   config.after_initialize do
-    ActiveRecord::Migrator.migrate(Rails.root.join("db/migrate"), nil)
+    ActiveRecord::MigrationContext.new("db/migrate/", ActiveRecord::SchemaMigration).migrate
   end
 end
