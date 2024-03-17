@@ -14,12 +14,7 @@ services:
     stdin_open: true
     volumes:
       - .:/app
-    environment:
-      RAILS_ENV: development
-      DB_HOST: db
-      DB_USERNAME: postgres
-      DB_PASSWORD: postgres
-      REDIS_URL: redis
+    env_file: development.env
 
   db:
     image: postgres:15.3-alpine
