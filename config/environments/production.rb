@@ -96,4 +96,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Doing this due to render free tier limitations
+  config.after_initialize do
+    ActiveRecord::Migrator.migrate(Rails.root.join("db/migrate"), nil)
+  end
 end
