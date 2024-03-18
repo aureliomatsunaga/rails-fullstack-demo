@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello there!
 
-Things you may want to cover:
+This is an example application made to showcase a tiny little bit of my knowledge building fullstack applications with Ruby on Rails.
 
-* Ruby version
+Also I used as an exercise for new feature in Rails 7, such as Hotwire/Turbo/Stimulus.
 
-* System dependencies
+You can access a live version of this app on [Render](https://rails-fullstack-demo.onrender.com/).
 
-* Configuration
+To run this application locally:
 
-* Database creation
+```bash
+docker compose up
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This will spin up the web application, database and redis (for Hotwire and caching).
