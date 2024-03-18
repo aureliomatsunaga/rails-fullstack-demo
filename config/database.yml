@@ -83,5 +83,3 @@ test:
 production:
   <<: *default
   database: rails_fullstack_demo_production
-  username: rails_fullstack_demo
-  password: <%= ENV["RAILS_FULLSTACK_DEMO_DATABASE_PASSWORD"] %>
